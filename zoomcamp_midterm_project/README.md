@@ -36,4 +36,4 @@ This project is deployed on AWS Elastic Beanstalk, making it accessible as a web
 
 ## Usage
 
-You can run the project locally or deploy or use the environment on AWS Elastic Beanstalk which url is specified in the predict_test.py file.
+You can run the project locally or utilize the web service hosted on AWS Elastic Beanstalk with the predict_test.py file.
