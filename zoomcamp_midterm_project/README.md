@@ -36,10 +36,4 @@ This project is deployed on AWS Elastic Beanstalk, making it accessible as a web
 
 ## Usage
 
-You can run the project locally or deploy it on AWS Elastic Beanstalk. To run it locally, you can follow these steps:
-
-1. Clone the repository.
-2. Install the required Python dependencies using Pipenv:
-
-   ```bash
-   pipenv install
+You can run the project locally or deploy or use the environment on AWS Elastic Beanstalk which url is specified in the predict_test.py file.
