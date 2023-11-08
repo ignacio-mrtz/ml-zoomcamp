@@ -10,29 +10,33 @@ The dataset used in this project is stored in the `data` directory. It includes 
 - `newspaper_budget`: Investment in newspaper advertising.
 - `sales`: The target variable representing sales revenue.
 
-## Jupyter Notebook
+##   Notebook.ipynb
 
 The project's main analysis and development are documented in the `notebook.ipynb` Jupyter Notebook. This notebook contains the following sections:
 - Data cleaning
 - Exploratory Data Analysis (EDA)
 - Training various machine learning models using different algorithms
 
-## Model Training
+## Train.py
 
-The `train.py` script is used to train the machine learning model that produced the lowest Root Mean Squared Error (RMSE) on the validation dataset. The selected algorithm is XGBoost with parameter tuning. The trained model is saved in a binary file.
+The `train.py` script is used to train the machine learning model that produced the lowest Root Mean Squared Error (RMSE) on the validation dataset. The selected algorithm is XGBoost. The trained model is saved in a binary file called 'model_midterm_project.bin'
 
-## Prediction
+## Predict.py
 
-The `predict.py` script uses the trained model to predict sales based on a dictionary specifying the budget for each advertising channel. Predictions can be called from the `predict_test.py` script.
+The `predict.py` script uses the trained model to predict sales. We use Flask to create a web service.
+
+## Predict_test.py
+
+Predictions can be called from the `predict_test.py` script. we send a dictionary specifying the budget for each advertising channel and the response it prints are the estimated sales for the budget you specified.
+
+## Other files Included
+
+- `Pipfile` and `Pipfile.lock`: Define the Python dependencies for the project.
+- `Dockerfile`: Contains the configuration for building a Docker container for this project.
 
 ## Deployment
 
-This project is deployed on AWS Elastic Beanstalk, making it accessible as a web service.
-
-## Files Included
-
-- `Dockerfile`: Contains the configuration for building a Docker container for this project.
-- `Pipfile` and `Pipfile.lock`: Define the Python dependencies for the project.
+This project is deployed on AWS Elastic Beanstalk, accessible as a web service. The 'predict_test.py' script is already configured to send a POST request to the AWS URL where the web service is deployed.
 
 ## Usage
 
