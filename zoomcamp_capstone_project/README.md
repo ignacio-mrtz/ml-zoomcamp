@@ -1,13 +1,18 @@
 
-Problem Description: Predicting On-Time Delivery in International E-Commerce
+Predicting On-Time Delivery in International E-Commerce
+
+Problem Description: 
 
 In this project, the primary objective is to develop a machine learning model capable of predicting whether products shipped by an international e-commerce company will be delivered on time. By predicting whether a shipment will be delivered on time, we aim to proactively address potential delays and improve the overall efficiency of the delivery system. . This problem arises from the critical need to enhance customer satisfaction and optimize the logistics and supply chain processes.
 
 Data:
-To achieve this goal, we will train our model with the following dataset: data/link
+
+To achieve this goal, we will train our model with the following dataset: [data/ecom-shipping]([URL](https://github.com/ignacio-mrtz/ml-zoomcamp/tree/main/zoomcamp_capstone_project/data)).
+
 Each row of the dataset contains information about a sale(customer information, detailed product specifications, and logistics information)
 
-Content
+Content:
+
 The dataset used for model building contains 10999 observations of 12 variables.
 The data contains the following information:
 
@@ -25,5 +30,7 @@ Weight in gms: It is the weight in grams.
 Reached on time: It is the target variable, where 1 Indicates that the product has NOT reached on time and 0 indicates it has reached on time.
 
 
-Instructions on How to Run the Project
+Instructions on How to Run the Project:
+
+
 
