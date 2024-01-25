@@ -33,4 +33,15 @@ Reached on time: It is the target variable, where 1 Indicates that the product h
 Instructions on How to Run the Project:
 
 
+CD to the directory where you want to clone the repo and:
+
+git clone <repository_url> --depth 1 --branch main --single-branch 
+ 
+After that you can run the following file but check you have the request a library installed(if not "pip install requests):
+
+python predict-test.py 
+
+you can play with different values of the python dict sent to the web service.
+
+
 
