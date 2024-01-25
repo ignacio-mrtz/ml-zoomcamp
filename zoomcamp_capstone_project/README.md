@@ -7,7 +7,7 @@ In this project, the primary objective is to develop a machine learning model ca
 
 Data:
 
-To achieve this goal, we will train our model with the following dataset: [data/ecom-shipping]([URL](https://github.com/ignacio-mrtz/ml-zoomcamp/tree/main/zoomcamp_capstone_project/data)).
+To achieve this goal, we will train our model with the following dataset: [data/ecom-shipping](https://github.com/ignacio-mrtz/ml-zoomcamp/tree/main/zoomcamp_capstone_project/data)
 
 Each row of the dataset contains information about a sale(customer information, detailed product specifications, and logistics information)
 
