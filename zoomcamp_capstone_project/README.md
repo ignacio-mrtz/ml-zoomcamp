@@ -35,9 +35,9 @@ Instructions on How to Run the Project:
 
 CD to the directory where you want to clone the repo and:
 
-git clone <repository_url> --depth 1 --branch main --single-branch 
+git clone https://github.com/ignacio-mrtz/ml-zoomcamp --depth 1 --branch main --single-branch zoomcamp_capstone_project
  
-After that you can run the following file but check you have the request a library installed(if not "pip install requests):
+After that you can run the following file but check you have the requests library installed(if not "pip install requests"):
 
 python predict-test.py 
 
