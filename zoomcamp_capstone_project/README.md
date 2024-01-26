@@ -11,8 +11,7 @@ To achieve this goal, we will train our model with the following dataset: [data/
 
 Each row contains information about a sale(customer information, detailed product specifications, and logistics information)
 
-The dataset contains 10999 observations of 12 variables  
-variables:
+The dataset contains 10999 observations of 12 variables:  
 
 ID: ID Number of Customers.  
 Warehouse block: The Company have big Warehouse which is divided in to block such as A,B,C,D,E.  
@@ -32,19 +31,19 @@ Reached on time: It is the target variable, where 1 Indicates that the product h
 The project's main analysis and development are documented in the `notebook.ipynb` Jupyter Notebook. This notebook contains the following sections:
 - Data cleaning
 - Exploratory Data Analysis (EDA)
-- Training various machine learning models using different algorithms
+- Training various machine learning models with different algorithms
 
 ## Train.py
 
-The `train.py` script is used to train the machine learning model that produced the lowest Root Mean Squared Error (RMSE) on the validation dataset. The selected algorithm is XGBoost. The trained model is saved in a binary file called 'model_midterm_project.bin'
+The `train.py` script is used to train the machine learning model that produced the best accuracy on the validation dataset. The selected algorithm is XGBoost. The trained model is saved in a binary file called 'model_capstone_project.bin'
 
 ## Predict.py
 
 The `predict.py` script uses the trained model to predict sales. We use Flask to create a web service.
 
-## Predict_test.py
+## Predict-test.py
 
-Predictions can be called from the `predict_test.py` script. we send a dictionary specifying the budget for each advertising channel and the response it prints are the estimated sales for the budget you specified.
+Predictions can be called from the `predict-test.py` script. we send a dictionary specifying details of the sale and the web service will predict if the product will arrive on time or not.
 
 ## Other files Included
 
@@ -53,7 +52,7 @@ Predictions can be called from the `predict_test.py` script. we send a dictionar
 
 ## Deployment
 
-This project is deployed on AWS Elastic Beanstalk, accessible as a web service. The 'predict_test.py' script is already configured to send a POST request to the AWS URL where the web service is deployed.
+This project is deployed on AWS Elastic Beanstalk, accessible as a web service. The 'predict-test.py' script is already configured to send a POST request to the AWS URL where the web service is deployed.
 
 ## Usage
 
